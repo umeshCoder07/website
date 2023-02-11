@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: linear-gradient(to right, #5800FF, #0096FF);
+    --primary: #2196F3;
+    --btn-color: linear-gradient(to bottom left, #7679fb, rgb(228, 141, 205), #b225f0);
+
+}
+body{
+    background-color: rgba(238, 238, 238, 1) 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background: var(--primary-color);
+    box-shadow: 0 5px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 1rem;
+}
+
+#menu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover {
+    border-bottom: 5px solid white;
+    padding-bottom: 1rem;
+}
+
+.navbar ul li:last-child:hover {
+    border-bottom: none;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.logo {
+    transition-duration: 0.5s;
+}
+
+.logo img {
+    width: 100%;
+
+}
+
+.logo:hover {
+    transform: scale(0.5);
+    cursor: grab;
+}
+
+.nav-btn {
+    outline: none;
+    color: white;
+    background-color: rgba(225, 225, 225, 0.5);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem 2rem;
+    transition-duration: 0.5s;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+
+.nav-btn:hover {
+    background-color: transparent;
+    border-color: #00d5ff;
+    color: black;
+    border-bottom: none;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px white;
+}
+
+.active {}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+#signup {
+    position: absolute;
+    box-shadow: none;
+    top: 20%;
+
+
+}
+
+.container i {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+
+}
+
+.container a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    float: right;
+    display: block;
+    color: black;
+
+
+}
+
+.container a:hover {
+    color: blue;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.5s;
+    padding: 3rem;
+    width: 320px;
+    background-color: white;
+    border-radius: 2rem;
+
+}
+
+input {
+    margin: 2rem 0rem;
+    width: 100%;
+    height: 3.3rem;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid black;
+}
+
+.box:hover {
+    box-shadow: 5px 5px 20px black;
+}
+
+.box h1 {
+
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.none {
+    display: none;
+}
+
+.btn {
+    margin: 3rem 0;
+    width: 100%;
+    font-size: 1.5rem;
+    height: 3.4rem;
+    border-radius: 10rem;
+    background: linear-gradient(to right, rgb(255, 135, 155), #af9fff);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+
+}
+
+#signup-btn {
+    border-radius: 2rem;
+    border: none;
+    padding: 1.2rem 13rem;
+    margin: 1rem;
+    font-weight: bold;
+    letter-spacing: px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    background: rgb(225, 255, 225, 0.1);
+    margin: 2rem ;
+
+}
+
+#signup-btn:hover {
+    background-color: rgb(233, 215, 228);
+
+
+    transform: scale(0.9);
+    text-decoration: underline;
+}
+
+@media (max-width:400px) {
+    html {
+        font-size: 50%;
+
+    }
+
+    .box {
+        margin: 0 2rem;
+        width: 270px;
+    }
+
+    #signup {
+
+        top: 27%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Isse tocuh mat  kriyo bhai  */
+
+
+/* Media queries  */
+
+
+
+
+
+@media (max-width:768px) {
+    #menu {
+        display: block;
+    }
+
+    .navbar ul {
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        right: 1px;
+        top: 74px;
+        justify-content: center;
+        min-height: 250px;
+        text-align: center;
+        display: none;
+        box-shadow: 0 0 15px rgb(126, 126, 126);
+        z-index: 7;
+
+    }
+
+    .navbar ul li {
+        margin: 4rem !important;
+    }
+
+    .navbar ul li:hover {
+        border: none;
+        padding: 0;
+
+    }
+
+    .nav-btn {
+        background-color: #0096FF;
+
+    }
+
+    .nav-btn:hover {
+        outline: 1px solid #0096FF;
+        background-color: #71c4ff;
+
+    }
+
+    .navbar ul li a {
+        color: black;
+    }
+
+    .active ul {
+        display: block;
+    }
+
+    .active #menu {
+        transform: rotate(360deg);
+
+    }
+}
